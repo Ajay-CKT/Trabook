@@ -1,0 +1,1137 @@
+:root {
+  --primary: #fa7436;
+  --secondary: #222222;
+  --background1: #fefcfb;
+  --background2: #f7f8fc;
+  --paragraph: #666666;
+  --light: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+body {
+  background-color: var(--background1);
+}
+
+/* body::-webkit-scrollbar {
+  display: none;
+} */
+
+header {
+  margin: 0 20%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  margin-bottom: 50px;
+}
+
+.trabook-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.trabook-logo img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.trabook-logo:hover {
+  cursor: pointer;
+}
+
+.menu-items {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu-items a {
+  position: relative;
+  text-decoration: none;
+}
+
+.menu-items a:hover::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  bottom: 0;
+  border: 1px solid var(--primary);
+}
+
+.auth-btns a {
+  text-decoration: none;
+}
+
+.menu-items a:hover {
+  color: var(--primary);
+}
+
+.paragraph,
+.paragraph a {
+  color: var(--paragraph);
+}
+
+.auth-btns {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+#login {
+  color: var(--primary);
+}
+
+#signup {
+  box-shadow: 0 4px 8px 0 rgba(250, 116, 54, 0.25),
+    0 6px 20px 0 rgba(250, 116, 54, 0.25);
+  background-color: var(--primary);
+  padding: 10px 2rem;
+  color: var(--light);
+  border-radius: 4px;
+}
+
+.hero-container {
+  margin: 0 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  height: 485px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 40%;
+  gap: 2.5rem;
+}
+
+.hero-content h1,
+.hero-content span {
+  font-size: 2.8rem;
+  font-family: volkhov;
+}
+
+#discover {
+  cursor: pointer;
+  border: 1px solid var(--primary);
+  padding: 8px 16px;
+  border-radius: 4px;
+  outline: none;
+  background: none;
+}
+
+#discover:hover {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.highlight {
+  color: var(--primary);
+}
+
+.hero-img {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 50%;
+  z-index: 15;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2px;
+  background-color: var(--light);
+  border-radius: 8px;
+  width: 150px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card p {
+  font-size: small;
+}
+
+.card img {
+  width: 25px;
+  height: 25px;
+}
+
+#ellipse {
+  position: absolute;
+  bottom: 0;
+  width: -500px;
+}
+
+#ellipse img {
+  width: 450px;
+}
+
+#tourist-img {
+  position: absolute;
+  left: 20px;
+  bottom: 8px;
+  z-index: 20;
+}
+
+#tourist-img img {
+  width: 400px;
+}
+
+.trophy {
+  position: absolute;
+  padding: 1rem 2px;
+  width: 150px;
+  top: 5rem;
+  left: -4rem;
+  z-index: 25;
+}
+
+.trophy p {
+  font-size: small;
+}
+
+.star {
+  position: absolute;
+  top: 60%;
+  padding: 4px;
+  width: 170px;
+  left: -2rem;
+  z-index: 25;
+}
+
+.star p {
+  font-size: small;
+}
+
+.google-map {
+  position: absolute;
+  padding: 4px;
+  top: 13rem;
+  width: 150px;
+  right: 0;
+  z-index: 25;
+}
+
+.card-info p {
+  font-size: smaller;
+}
+
+#vector-plane {
+  position: absolute;
+  top: -3rem;
+  left: -6rem;
+}
+
+#vector-plane img {
+  width: 700px;
+}
+
+.search {
+  width: 100%;
+  padding: 0 8rem;
+  margin: 2rem 0;
+  border-radius: 4px;
+}
+
+#explore {
+  cursor: pointer;
+  border: 1px solid var(--primary);
+  padding: 8px 16px;
+  border-radius: 4px;
+  outline: none;
+  background: var(--primary);
+  color: var(--light);
+  box-shadow: 0 4px 8px 0 rgba(250, 116, 54, 0.1),
+    0 6px 20px 0 rgba(250, 116, 54, 0.1);
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.search-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.location .paragraph,
+.date .paragraph,
+.guest .paragraph {
+  color: var(--paragraph);
+  font-size: small;
+}
+
+.location,
+.date,
+.guest {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.value {
+  background-color: var(--background2);
+}
+
+.value-container {
+  margin: 0 20%;
+  padding: 4rem 0;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.things {
+  position: relative;
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.things h2,
+.things span {
+  text-align: center;
+  font-size: 2rem;
+  font-family: volkhov;
+}
+
+.things p {
+  text-align: center;
+  font-size: small;
+}
+
+.things img {
+  position: absolute;
+  width: 100px;
+  right: -8rem;
+}
+
+.things-cards {
+  position: relative;
+  display: flex;
+  gap: 3rem;
+}
+
+.card-signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  border-radius: 4px;
+  gap: 1rem;
+  width: 300px;
+  height: 250px;
+  padding: 1rem;
+  background-image: url("../public/Travel.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-signup .paragraph {
+  font-size: small;
+}
+
+.card-money {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  border-radius: 4px;
+  gap: 1rem;
+  width: 300px;
+  height: 250px;
+  padding: 1rem;
+  background-image: url("../public/Money.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-money .paragraph {
+  font-size: small;
+}
+
+.card-travel {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  border-radius: 4px;
+  gap: 1rem;
+  width: 300px;
+  height: 250px;
+  padding: 1rem;
+  background-image: url("../public/Travel.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-travel .paragraph {
+  font-size: small;
+}
+
+.things-card h3 {
+  font-weight: 400;
+}
+
+.deals {
+  background-color: var(--background1);
+}
+
+.deals-container {
+  margin: 0 20%;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.deals-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+
+.deals-info h2,
+.deals-info span {
+  font-size: 2rem;
+  font-family: volkhov;
+}
+
+.deals-info p {
+  padding: 1rem 4.5rem;
+}
+
+.deals-info .paragraph {
+  font-size: small;
+}
+
+.deals-cards {
+  padding: 2rem 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.deals-card {
+  position: relative;
+  width: 200px;
+  height: 335px;
+  border-radius: 4px;
+  background-color: var(--background1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.deals-card-img img {
+  width: 100%;
+  height: 250px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.buy-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: bottom 0.3s;
+  cursor: pointer;
+  border: 1px solid var(--primary);
+  padding: 8px 16px;
+  border-radius: 4px;
+  outline: none;
+  background: var(--primary);
+  color: var(--light);
+  box-shadow: 0 4px 8px 0 rgba(250, 116, 54, 0.1),
+    0 6px 20px 0 rgba(250, 116, 54, 0.1);
+  z-index: -10;
+}
+
+.deals-card:hover .buy-btn {
+  position: absolute;
+  top: 12rem;
+  box-shadow: 0 4px 8px 0 rgba(250, 116, 54, 0.1),
+    0 6px 20px 0 rgba(250, 116, 54, 0.1);
+  z-index: 10;
+}
+
+.deals-card-title {
+  padding: 4px 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.deals-card-title h3 {
+  font-weight: 400;
+}
+
+.deals-card-title .card-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.card-rating img {
+  width: 15px;
+  height: 15px;
+}
+
+.card-rating .paragraph {
+  font-size: small;
+}
+
+.deals-card-price {
+  padding: 4px 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.deals-card-price .card-location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.card-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.card-location img {
+  width: 10px;
+  height: 15px;
+}
+
+.card-location .paragraph {
+  font-size: small;
+}
+
+.card-discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-discount .paragraph {
+  font-size: small;
+  text-decoration: line-through;
+}
+
+.card-discount .para-highlight {
+  border-radius: 1rem;
+  padding: 4px;
+  background: #ffc3a7;
+  font-size: small;
+  color: var(--primary);
+}
+
+.card-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-carousel div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--paragraph);
+  border-radius: 50%;
+}
+
+.card-carousel div:hover {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  color: var(--light);
+}
+
+.vacation {
+  background-color: var(--background1);
+}
+
+.vacation-container {
+  margin: 0 20%;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.vacation-info {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+}
+
+.vacation-info .tree {
+  position: absolute;
+  right: -1rem;
+}
+
+.vacation-info .tree img {
+  width: 75px;
+  height: 60px;
+}
+
+.vacation-info h2,
+.vacation-info span {
+  font-size: 2rem;
+  font-family: volkhov;
+}
+
+.vacation-info p {
+  padding: 1rem 4.5rem;
+}
+
+.vacation-info .paragraph {
+  font-size: small;
+}
+
+.vacation-card-carousel {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.vacation-card-carousel div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--paragraph);
+  border-radius: 50%;
+}
+
+.vacation-card-carousel div:hover {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  color: var(--light);
+}
+
+.vacations-cards {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.vacations-card {
+  position: relative;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  width: 280px;
+  height: 335px;
+  border-radius: 4px;
+  background-color: var(--background1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.deals-card:hover,
+.vacations-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(250, 116, 54, 0.1),
+    0 6px 20px 0 rgba(250, 116, 54, 0.1);
+}
+
+.vacations-card-img {
+  width: 100%;
+  height: 210px;
+  border-radius: 4px;
+}
+
+.vacations-card-img img {
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.vacations-card:hover .buy-btn {
+  position: absolute;
+  top: 9.5rem;
+  box-shadow: 0 4px 8px 0 rgba(250, 116, 54, 0.1),
+    0 6px 20px 0 rgba(250, 116, 54, 0.1);
+  z-index: 10;
+}
+
+.vacation-card-location img {
+  width: 10px;
+  height: 10px;
+}
+
+.vacation-card-rating img {
+  width: 15px;
+  height: 15px;
+}
+
+.vacations-card-about {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+
+.vacation-card-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.vacation-card-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.vacations-card-about .paragraph {
+  font-size: small;
+}
+
+.vacations-card-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+
+.vacations-card-title h3 {
+  font-weight: 450;
+}
+
+.vacations-card-title-highlight {
+  font-weight: 550;
+  color: var(--primary);
+}
+
+.abouts {
+  background-color: var(--background2);
+}
+
+.about-container {
+  margin: 0 20%;
+  padding: 6rem;
+  display: flex;
+  gap: 7rem;
+}
+
+.about-content h2,
+.about-content .highlight {
+  font-family: volkov;
+  font-size: 2.2rem;
+}
+
+.about-content p {
+  font-size: small;
+}
+
+.about-card-carousel {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.about-card-carousel div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--paragraph);
+  border-radius: 50%;
+}
+
+.about-card-carousel div:hover {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  color: var(--light);
+}
+
+.about-content {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+}
+
+.about-feedback {
+  position: relative;
+  width: 65%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.relative-parent {
+  position: relative;
+  position: absolute;
+  bottom: 0;
+  width: 400px;
+  height: 200px;
+  border-radius: 4px;
+  padding: 1rem;
+  background-color: var(--background2);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.absolute-child {
+  position: absolute;
+  position: relative;
+  width: 400px;
+  height: 200px;
+  top: -1rem;
+  left: -3rem;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  background-color: var(--light);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+
+.relative-parent h4 {
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.relative-parent .paragraph {
+  font-size: 10px;
+}
+
+.absolute-child p {
+  font-size: small;
+}
+
+.absolute-child h4 {
+  font-weight: 500;
+  opacity: 1;
+}
+
+.absolute-child .vecor-plane-3 {
+  position: absolute;
+  width: 100px;
+  right: -8rem;
+  top: -3rem;
+}
+
+.child-img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  left: -1.5rem;
+  top: -1.2rem;
+}
+
+.child-img img {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.blogs {
+  padding: 0 0 8rem 0;
+}
+
+.blogs-card-title p {
+  color: black;
+  font-size: small;
+  padding: 4px 4px 0 8px;
+}
+
+.blogs-card-date p {
+  opacity: 0.5;
+  font-size: smaller;
+  padding: 4px 4px 0 8px;
+}
+
+.blogs-carousel {
+  display: flex;
+  gap: 8px;
+}
+
+.blogs-carousel div {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--paragraph);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.blogs-carousel .active {
+  background-color: var(--primary);
+  opacity: 1;
+}
+
+footer {
+  padding: 10rem 0 2rem 0;
+  background-color: var(--background2);
+}
+
+.footer-relative {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20%;
+}
+
+.footer-trabook-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-trabook-logo img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.footer-trabook-logo:hover {
+  cursor: pointer;
+}
+
+.footer-about {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+
+.footer-about p {
+  font-size: small;
+  color: var(--paragraph);
+}
+
+.footer-trabook-social div {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--light);
+}
+
+.facebook {
+  background-image: url("../public/facebook.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instagram img {
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.twitter {
+  background-image: url("../public/twitter.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.facebook:hover,
+.instagram:hover,
+.twitter:hover {
+  background-color: var(--primary);
+  box-shadow: 0 4px 8px 0 rgba(250, 116, 54, 0.1),
+    0 6px 20px 0 rgba(250, 116, 54, 0.1);
+}
+
+.footer-trabook-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.company div,
+.contact div,
+.more div {
+  font-size: small;
+}
+
+.footer-trabook-social div:hover {
+  cursor: pointer;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-details {
+  display: flex;
+  justify-content: end;
+  gap: 5rem;
+  width: 70%;
+}
+
+.company,
+.contact,
+.more {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+
+.company-div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+}
+
+.company-div p:hover {
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.footer-container {
+  padding: 2rem 0;
+  border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+}
+
+.footer-copyrights p {
+  font-size: smaller;
+  color: var(--paragraph);
+}
+
+.footer-copyrights {
+  padding: 2rem 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-absolute {
+  top: -19rem;
+  position: absolute;
+  background-color: var(--primary);
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  padding: 0 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-absolute h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: volkhov;
+  color: var(--light);
+}
+
+.input-email-subs {
+  padding: 0 8px;
+  width: 100%;
+  height: 50px;
+  background-color: var(--light);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 20;
+}
+
+.input-email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.input-email input {
+  width: 340px;
+  border: none;
+  outline: none;
+}
+
+.input-email-subs button {
+  padding: 4px 8px;
+  background-color: var(--primary);
+  color: var(--light);
+  border: none;
+  border-radius: 4px;
+}
+
+.subs-decors .tree {
+  width: 80px;
+  color: var(--light);
+  position: absolute;
+  top: 4px;
+  right: 0;
+}
+
+.subs-decors .rounds {
+  width: 300px;
+  color: var(--light);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
